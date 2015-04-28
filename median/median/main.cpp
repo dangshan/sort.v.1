@@ -1,8 +1,8 @@
 //
-//  main.m
-//  sort.v.1
+//  main.cpp
+//  median
 //
-//  Created by Nancy Wood on 2015/4/19.
+//  Created by Nancy Wood on 2015/4/29.
 //  Copyright (c) 2015年 Nancy Wood. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 #include <time.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
+    {
         // insert code here...
         int i, n, *v, temp, j;
         srand(time(0));
@@ -36,22 +36,22 @@ int main(int argc, const char * argv[]) {
             int max=i;
             
             
-                for(j=i; j<n; ++j)
-                {
-                    if(v[j]>v[max])
-                        max=j;
-                }
-                if(max!=i)
-                {
-                    temp = v[max];
-                    v[max]=v[i];
-                    v[i]=temp;
-                }
-                for(int k=0; k<n; ++k)
-                {
-                    printf("%d,",v[k]);
-                }
-                printf("\n");
+            for(j=i; j<n; ++j)
+            {
+                if(v[j]>v[max])
+                    max=j;
+            }
+            if(max!=i)
+            {
+                temp = v[max];
+                v[max]=v[i];
+                v[i]=temp;
+            }
+            for(int k=0; k<n; ++k)
+            {
+                printf("%d,",v[k]);
+            }
+            printf("\n");
             
         }
         

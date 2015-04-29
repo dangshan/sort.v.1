@@ -55,6 +55,21 @@ int main(int argc, const char * argv[]) {
             
         }
         
+        // median
+        // 因為n已經知道是10，所以median是第5、6大的數的平均
+        // 是說我們也不會對未知的n做排序吼...因為會排不完= ="
+        // 可以玩有上界的random n個數排序，就可以判斷奇偶數再決定median算法嗎
+        // 嗚嗚等急迫的事忙完再回來想
+        
+        int a=v[4], b=v[5];
+        int sum=a+b;
+        double k=sum/2.0;  //2.0太神奇了啦XDDD
+        printf("median is %f",k);
+        printf("\n");
+        
+        
+        
+        
         //NSLog(@"Hello, World!");
     }
     return 0;
